@@ -14,7 +14,7 @@ local PANEL = {}
 
 		nut.gui.score = self
 
-		self:SetSize(ScrW() * nut.config.get("sbWidth"), ScrH() * nut.config.get("sbHeight"))
+		self:SetSize(ScrW() * nut.config.get("sbWidth", 0.6), ScrH() * nut.config.get("sbHeight", 0.6))
 		self:Center()
 
 		self.title = self:Add("DLabel")
@@ -81,7 +81,7 @@ local PANEL = {}
 
 	function PANEL:Think()
 		if ((self.nextUpdate or 0) < CurTime()) then
-			self.title:SetText(nut.config.get("sbTitle"))
+			self.title:SetText(nut.config.get("sbTitle", "Garry's Mod"))
 
 			local visible, amount
 
