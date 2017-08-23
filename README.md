@@ -26,3 +26,8 @@ You can contribute to this Github repo by adding translations, pointing issues w
 - tying_improvements
 
    This plugin enables searching a player when tied and tying a player if you've got Zip Ties in your inventory with the F2 button.
+
+
+- observer_plus
+
+   This plugin adds new features to the default observer, showing the players health, armor and current weapon, and if the current weapon is lowered or not (the text is red when its equipped and white when its lowered)
